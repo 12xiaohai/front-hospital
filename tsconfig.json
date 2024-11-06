@@ -3,20 +3,22 @@
   "compilerOptions": {
     "allowJs": true,
     "sourceMap": true,
-    "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     },
     "lib": ["esnext", "dom"],
-    "types": ["@dcloudio/types", "miniprogram-api-typings", "@uni-helper/uni-app-types"],
-    "strict": true,  // 开启严格模式
-    "esModuleInterop": true,  // 启用 ES 模块互操作性
-    "skipLibCheck": true  // 跳过库文件的类型检查
+    "types": [
+      "@dcloudio/types",
+      "miniprogram-api-typings",
+      "@uni-helper/uni-app-types",
+      "@uni-helper/uni-ui-types"
+    ]
   },
+  // 校验 uni-app 组件类型
   "vueCompilerOptions": {
+    // experimentalRuntimeMode 已废弃，现调整为 nativeTags，请升级 Volar 插件至最新版本
     "nativeTags": ["block", "component", "template", "slot"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "exclude": ["node_modules", "dist", "src/types"]  // 确保忽略 node_modules 和不必要的文件
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
