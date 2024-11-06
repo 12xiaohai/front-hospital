@@ -1,76 +1,84 @@
 {
-	"pages": [
-		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "首页"
-			}
-		},
-		{
-			"path": "pages/my/my",
-			"style": {
-				"navigationBarTitleText": "我的"
-
-			}
-		},
-		{
-			"path": "pages/cart/cart",
-			"style": {
-				"navigationBarTitleText": "购物车"
-			}
-		},
-		{
-			"path": "pages/category/category",
-			"style": {
-				"navigationBarTitleText": "分类"
-			}
-		},
-		{
-			"path": "pages/login/login",
-			"style": {
-				"navigationBarTitleText": "登录"
-			}
-		}
-	],
-
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "购物小程序",
-		"navigationBarBackgroundColor": "#2dcec6",
-		"backgroundColor": "#F8F8F8"
-	},
-	// 设置 TabBar
-	"tabBar": {
-		"color": "#333",
-		"selectedColor": "#27ba9b",
-		"backgroundColor": "#fff",
-		"borderStyle": "white",
-		"list": [
-			{
-				"text": "首页",
-				"pagePath": "pages/index/index",
-				"iconPath": "static/tabs/home_default.png",
-				"selectedIconPath": "static/tabs/home_selected.png"
-			},
-			{
-				"text": "分类",
-				"pagePath": "pages/category/category",
-				"iconPath": "static/tabs/category_default.png",
-				"selectedIconPath": "static/tabs/category_selected.png"
-			},
-			{
-				"text": "购物车",
-				"pagePath": "pages/cart/cart",
-				"iconPath": "static/tabs/cart_default.png",
-				"selectedIconPath": "static/tabs/cart_selected.png"
-			},
-			{
-				"text": "我的",
-				"pagePath": "pages/my/my",
-				"iconPath": "static/tabs/user_default.png",
-				"selectedIconPath": "static/tabs/user_selected.png"
-			}
-		]
-	}
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "中医药小程序"
+      }
+    },
+    {
+      "path": "pages/patient/appointment",  // 预约医生页面
+      "style": {
+        "navigationBarTitleText": "预约医生"
+      }
+    },
+    {
+      "path": "pages/patient/consultation",  // 在线问诊页面
+      "style": {
+        "navigationBarTitleText": "在线问诊"
+      }
+    },
+    {
+      "path": "pages/patient/healthData",  // 身体数据监测页面
+      "style": {
+        "navigationBarTitleText": "身体数据监测"
+      }
+    },
+    {
+      "path": "pages/patient/mall",  // 在线商城页面
+      "style": {
+        "navigationBarTitleText": "在线商城"
+      }
+    },
+    {
+      "path": "pages/login/login",  // 登录页面
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/my/my",  // 添加个人中心页面
+      "style": {
+        "navigationBarTitleText": "个人中心"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "中医小程序",
+    "navigationBarBackgroundColor": "#2dcec6",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+  "color": "#333",
+  "selectedColor": "#27ba9b",
+  "backgroundColor": "#fff",
+  "borderStyle": "white",
+  "list": [
+    {
+      "text": "首页",
+      "pagePath": "pages/index/index",
+      "iconPath": "static/tabs/home_default.png",
+      "selectedIconPath": "static/tabs/home_selected.png"
+    },
+    {
+      "text": "在线问诊",
+      "pagePath": "pages/patient/consultation",
+      "iconPath": "static/tabs/consultation_default.png",
+      "selectedIconPath": "static/tabs/consultation_selected.png"
+    },
+    {
+      "text": "健康管理",
+      "pagePath": "pages/patient/healthData",
+      "iconPath": "static/tabs/health_default.png",
+      "selectedIconPath": "static/tabs/health_selected.png"
+    },
+    {
+      "text": "个人中心",
+      "pagePath": "pages/my/my",
+      "iconPath": "static/tabs/user_default.png",
+      "selectedIconPath": "static/tabs/user_selected.png"
+    }
+  ]
+}
 }

@@ -3,9 +3,7 @@
 </script>
 
 <template>
-  <view class="my">my</view>
+  <view class="mall">mall</view>
 </template>
 
-<style lang="scss">
-//
-</style>
+<style lang="scss"></style>
